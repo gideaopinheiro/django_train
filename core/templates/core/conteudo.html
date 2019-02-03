@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+    
+    {% for cont in conteudo %}
+        <strong>{{cont.titulo}}</strong> <br><br>
+        {{cont.texto|linebreaksbr}}
+        <br><br>
+    {% endfor %}
+
+{% endblock main_content %}
+    
+    
